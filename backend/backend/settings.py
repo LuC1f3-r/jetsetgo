@@ -116,6 +116,12 @@ USE_I18N = True
 USE_TZ = True
 soidas'djsdas
 
+woeorkskaw adminod
+ wda
+ wda wdka
+ d adkw
+ 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
