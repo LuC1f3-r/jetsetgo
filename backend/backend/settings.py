@@ -115,9 +115,6 @@ USE_I18N = True
 
 USE_TZ = True
 soidas'djsdas
-
-woeorkskaw adminod
- wda
  wda wdka
 
 # Static files (CSS, JavaScript, Images)
