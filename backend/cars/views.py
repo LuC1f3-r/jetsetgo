@@ -10,3 +10,7 @@ class CarViewSet(viewsets.ModelViewSet):
     queryset = Car.objects.all()
     serializer_class = CarSerializer
     permission_classes = [IsAdminOrReadOnly]
+    filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
+    filterset_fields = ['location', 'availability']
+    search_fields = ['company', 'model']
+    ordering_fields = ['price_per_day']

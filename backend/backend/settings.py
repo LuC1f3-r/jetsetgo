@@ -37,10 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     'corsheaders',
     'rest_framework',
     'accounts',
-    'bookings',  # Make sure the folder is named 'bookings' and not 'booking'
+    'bookings',  
     'hotels',
     'flights',
     'cars',
@@ -58,6 +59,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+}
 
 ROOT_URLCONF = 'backend.urls'
 
