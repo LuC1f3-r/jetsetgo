@@ -38,6 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'rest_framework',
+    'accounts',
+    'bookings',  # Make sure the folder is named 'bookings' and not 'booking'
+    'hotels',
+    'flights',
+    'cars',
+    'payments',
+    'admin_logs',
 ]
 
 MIDDLEWARE = [
